@@ -5,7 +5,6 @@ class TrafficManager:
         self.df = df
 
     def simulate_traffic_flow(self):
-        """Simulate traffic flow at the intersection."""
         for index, row in self.df.iterrows():
             vehicles_passed = 0
             if row['Light_Timing'] == 'Green':
